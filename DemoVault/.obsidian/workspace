@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "5c0f51d91321eb04",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd76b3449c0a0995",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Dashboard.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6cb5dbee89a6ca32",
+    "type": "split",
+    "children": [
+      {
+        "id": "9af81796afa37e43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e84694cc5e4fa2b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a19d8a8510127771",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3f0230e5d272638e",
+    "type": "split",
+    "children": [
+      {
+        "id": "84269476a6cac576",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38d84c2d7ffe296d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dashboard.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "fd76b3449c0a0995",
+  "lastOpenFiles": [
+    "Dashboard.md",
+    "Project Board.md",
+    "Goals.md",
+    "templates/project_item_template.md",
+    "templates/goal_item_template.md",
+    "projects/; Test project.md",
+    "goals/2022-02-11 - Reach $10.000 MRR.md",
+    "projects/; test.md",
+    "projects/; Q1 2022 Lead Gen with Cold Emails.md",
+    "projects/; Running Plan Q1 2022.md"
+  ]
+}
