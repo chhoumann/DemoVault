@@ -6,4 +6,4 @@ This acts as a showcase for various stuff I create or compile with [Obsidian](ht
 If you liked this, you can buy me a coffee using the sponsor/donation links in the sidebar. This helps me create more stuff🚀. Thank you!
 
 #### Disclaimer
-You can use the contents of this vault for whatever you want. If you want to share it, do give proper attribution (link here). Do not sell or distribute it without my permission.
+You can use the contents of this vault for whatever you want. If you want to share it, do give proper attribution (link back here). Do not sell or distribute it without my permission.
