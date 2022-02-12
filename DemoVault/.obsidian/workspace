@@ -68,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Goals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,11 +89,11 @@
   "active": "fd76b3449c0a0995",
   "lastOpenFiles": [
     "Goals.md",
+    "Dashboard.md",
     "Project Board.md",
     "goals/2022-02-11 - Finish College.md",
     "goals/2022-02-11 - Reach $10.000 MRR.md",
     "goals/2022-02-11 - Run 1000 km in 2022.md",
-    "Dashboard.md",
     "templates/project_item_template.md",
     "templates/goal_item_template.md",
     "projects/; Test project.md",
