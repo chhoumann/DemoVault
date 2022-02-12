@@ -13,7 +13,7 @@ Projects:: `$= const projects = dv.page('{{DATE}} - {{VALUE:Goal}}').file.inlink
 %%
 
 
-## Key results
+## What does success look like? What are the key results?
 - 
 
 
