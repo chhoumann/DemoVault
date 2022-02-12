@@ -1,7 +1,7 @@
 ---
 tags: goal
 alias: Finish College
-Type: 
+Type: Life
 Progress: 5
 Target: 10
 Reason: 

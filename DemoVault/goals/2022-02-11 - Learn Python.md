@@ -1,7 +1,7 @@
 ---
 tags: goal
 alias: Learn Python
-Type: 
+Type: Knowledge
 Progress: 0
 Target: 1
 Reason: To start automating some trivial tasks.

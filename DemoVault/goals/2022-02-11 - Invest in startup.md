@@ -1,7 +1,7 @@
 ---
 tags: goal
 alias: Invest in startup
-Type: 
+Type: Wealth
 Progress: 0
 Target: 1
 Reason: Exploring the field and want to consult with skin in the game.

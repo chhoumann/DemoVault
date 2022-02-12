@@ -10,14 +10,14 @@ kanban-plugin: basic
 
 
 ## Knowledge
+
 - [ ] [[2022-02-11 - Learn Python|Learn Python]]
 - [ ] [[2022-02-11 - Learn Copywriting|Learn Copywriting]]
 
 
-
 ## Life
-- [ ] [[2022-02-11 - Finish College|Finish College]]
 
+- [ ] [[2022-02-11 - Finish College|Finish College]]
 
 
 ## Professional
@@ -26,8 +26,8 @@ kanban-plugin: basic
 
 
 ## Wealth
-- [ ] [[2022-02-11 - Invest in startup|Invest in startup]]
 
+- [ ] [[2022-02-11 - Invest in startup|Invest in startup]]
 
 
 

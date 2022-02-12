@@ -21,6 +21,10 @@
       {
         "property": "status",
         "boardName": "Project Board"
+      },
+      {
+        "property": "Type",
+        "boardName": "Goals"
       }
     ]
   },

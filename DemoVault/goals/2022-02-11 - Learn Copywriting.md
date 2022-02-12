@@ -1,7 +1,7 @@
 ---
 tags: goal
 alias: Learn Copywriting
-Type: 
+Type: Knowledge
 Progress: 0
 Target: 1
 Reason: To advance my career and improve my skills.
