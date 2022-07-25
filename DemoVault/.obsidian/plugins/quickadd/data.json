@@ -13,6 +13,13 @@
       "type": "Macro",
       "command": true,
       "macroId": "255de4e6-6aa2-4a54-a45c-1315ffa46330"
+    },
+    {
+      "id": "568e2c32-f2e6-4eb3-8ce9-250ef7ad0b35",
+      "name": "🎯 Add Auto Tracking Goal",
+      "type": "Macro",
+      "command": true,
+      "macroId": "38e8764d-6507-46d8-88b1-1b4a6bf0590a"
     }
   ],
   "macros": [
@@ -176,6 +183,91 @@
             "task": true,
             "openFileInNewTab": {
               "enabled": true,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Add AutoTracking Goal",
+      "id": "38e8764d-6507-46d8-88b1-1b4a6bf0590a",
+      "commands": [
+        {
+          "name": "Create AutoTracking Goal Note",
+          "type": "NestedChoice",
+          "id": "9c8538c0-b993-4dfa-b689-8a523ef6a9d1",
+          "choice": {
+            "id": "07964ef6-d09c-48ab-b254-6091cca92546",
+            "name": "Create AutoTracking Goal Note",
+            "type": "Template",
+            "command": false,
+            "templatePath": "templates/autotracking_goal_item_template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{DATE}} - {{VALUE:Goal}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "goals"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false
+            },
+            "appendLink": false,
+            "incrementFileName": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "905a4d34-0655-41c5-9085-3204b1305df1",
+          "time": 200
+        },
+        {
+          "name": "Capture to Kanban",
+          "type": "NestedChoice",
+          "id": "0bc411b3-6f40-45e0-8cab-a6166c91f5f4",
+          "choice": {
+            "id": "1c33260d-a886-4eb8-a264-1178a8e12017",
+            "name": "Capture to Kanban",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "Goals.md",
+            "captureToActiveFile": false,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[[{{DATE}} - {{VALUE:Goal}}|{{VALUE:Goal}}]]"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## {{VALUE:Professional,Physical,Knowledge,Wealth,Life}}",
+              "insertAtEnd": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": true,
+            "openFileInNewTab": {
+              "enabled": false,
               "direction": "vertical",
               "focus": true
             },

@@ -5,9 +5,9 @@ kanban-plugin: basic
 ---
 
 ## Todo
+
 - [ ] [[; Automate data analysis for email lead data|Automate data analysis for email lead data]]
 - [ ] [[; Find startups to invest in|Find startups to invest in]]
-
 
 
 ## Waiting
@@ -16,6 +16,7 @@ kanban-plugin: basic
 
 ## In Progress
 
+- [ ] [[; AutoTrack Project|AutoTrack Project]]
 - [ ] [[; Read and summarize top 5 copywriting books|Read and summarize top 5 copywriting books]]
 - [ ] [[; Course 1|Course 1]]
 - [ ] [[; Course 2|Course 2]]

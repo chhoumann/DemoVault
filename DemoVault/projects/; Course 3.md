@@ -8,7 +8,10 @@ subtitle: 5th semester course.
 %%
 Goal:: [[2022-02-11 - Finish College|Finish College]]
 %%
-
+- [x] a
+- [x] b
+- [x] c
+- [ ] d
 # Course 3
 
 ## Project Info

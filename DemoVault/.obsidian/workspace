@@ -4,16 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "fd76b3449c0a0995",
+        "id": "be964a10dc1f59ce",
         "type": "leaf",
+        "dimension": 27.301756253326236,
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "Dashboard.md",
-            "mode": "preview",
-            "source": false
+            "file": "Goals.md"
           }
         }
+      },
+      {
+        "id": "fc3b3d38e5419b1f",
+        "type": "split",
+        "dimension": 72.69824374667377,
+        "children": [
+          {
+            "id": "98a146562ead3e45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "goals/2022-07-25 - AutoTracking test.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7d87d3c182c3ad64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/; AutoTrack Project.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -53,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3f0230e5d272638e",
@@ -69,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dashboard.md",
+                "file": "projects/; AutoTrack Project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +119,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fd76b3449c0a0995",
+  "active": "7d87d3c182c3ad64",
   "lastOpenFiles": [
-    "Dashboard.md",
-    "projects/; Read and summarize top 5 copywriting books.md",
+    "goals/2022-07-25 - AutoTracking test.md",
+    "Goals.md",
+    "projects/; AutoTrack Project.md",
     "Project Board.md",
+    "templates/autotracking_goal_item_template.md",
     "goals/2022-02-11 - Finish College.md",
     "templates/goal_item_template.md",
-    "Goals.md",
-    "goals/2022-02-11 - Learn Python.md",
-    "goals/2022-02-11 - Reach $10.000 MRR.md",
-    "goals/2022-02-11 - Run 1000 km in 2022.md",
-    "templates/project_item_template.md"
+    "projects/; Course 3.md",
+    "projects/; Course 2.md",
+    "projects/; Course 1.md"
   ]
 }
