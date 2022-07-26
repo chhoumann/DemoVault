@@ -7,6 +7,7 @@ subtitle: To do learning in public.
 ---
 %%
 Goal:: [[2022-02-11 - Learn Copywriting|Learn Copywriting]]
+Bar:: `$= dv.view('total-progress-bar', {file: "; Read and summarize top 5 copywriting books"})`
 %%
 
 # Read and summarize top 5 copywriting books
@@ -20,4 +21,4 @@ Goal:: [[2022-02-11 - Learn Copywriting|Learn Copywriting]]
 ## Review questions
 
 ## Tasks
-- [ ] 
+- [x] 

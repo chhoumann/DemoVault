@@ -16,6 +16,7 @@ kanban-plugin: basic
 
 ## In Progress
 
+- [ ] [[; Test project|Test project]]
 - [ ] [[; AutoTrack Project|AutoTrack Project]]
 - [ ] [[; Read and summarize top 5 copywriting books|Read and summarize top 5 copywriting books]]
 - [ ] [[; Course 1|Course 1]]

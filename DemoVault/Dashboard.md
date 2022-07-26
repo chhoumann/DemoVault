@@ -21,6 +21,7 @@ SORT Type DESC
 TABLE WITHOUT ID
 	(link(file.path, alias[0])) as title,
 	subtitle,
+	Bar,
 	("Goal: " + link(Goal, Goal.alias)) as goal
 FROM #project
 WHERE status = "In Progress"

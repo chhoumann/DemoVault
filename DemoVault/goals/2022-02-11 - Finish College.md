@@ -8,7 +8,6 @@ Reason:
 Timespan:  3 Years
 ---
 %%
-Bar:: `$= dv.view('progress-bar', {file: '2022-02-11 - Finish College'})`
 Projects:: `$= const projects = dv.page('2022-02-11 - Finish College').file.inlinks.where(p => { const mp = dv.page(p.path); return mp.tags?.contains('project') && mp.status === 'In Progress'}); if (projects.length > 0) { dv.header(4, projects.length > 1 ? "Projects" : "Project"); dv.list(projects) }`
 %%
 

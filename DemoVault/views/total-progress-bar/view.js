@@ -22,7 +22,6 @@ const finishedTasksInProjects = projects.values.reduce((acc, p) => {
 
 const Target = totalTasksGoalPage + totalTasksInProjects;
 const Progress = finishedTasksGoalPage + finishedTasksInProjects;
-console.log(totalTasksInProjects, finishedTasksInProjects);
 
 const containerEl = createDiv();
 Object.assign(containerEl.style, {

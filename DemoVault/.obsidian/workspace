@@ -4,47 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "be964a10dc1f59ce",
+        "id": "9e2c642e37052663",
         "type": "leaf",
-        "dimension": 27.301756253326236,
         "state": {
-          "type": "kanban",
-          "state": {
-            "file": "Goals.md"
-          }
+          "type": "empty",
+          "state": {}
         }
-      },
-      {
-        "id": "fc3b3d38e5419b1f",
-        "type": "split",
-        "dimension": 72.69824374667377,
-        "children": [
-          {
-            "id": "98a146562ead3e45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "goals/2022-07-25 - AutoTracking test.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7d87d3c182c3ad64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/; AutoTrack Project.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          }
-        ],
-        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -101,7 +66,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/; AutoTrack Project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,17 +83,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7d87d3c182c3ad64",
+  "active": "9e2c642e37052663",
   "lastOpenFiles": [
-    "goals/2022-07-25 - AutoTracking test.md",
     "Goals.md",
-    "projects/; AutoTrack Project.md",
-    "Project Board.md",
+    "goals/2022-07-26 - a.md",
+    "Dashboard.md",
     "templates/autotracking_goal_item_template.md",
-    "goals/2022-02-11 - Finish College.md",
+    "projects/; Test project.md",
     "templates/goal_item_template.md",
-    "projects/; Course 3.md",
-    "projects/; Course 2.md",
-    "projects/; Course 1.md"
+    "Project Board.md",
+    "templates/project_item_template.md",
+    "goals/2022-02-11 - Finish College.md",
+    "projects/; Read and summarize top 5 copywriting books.md"
   ]
 }

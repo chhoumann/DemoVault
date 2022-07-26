@@ -14,6 +14,7 @@ let markdownLink = this.app.fileManager.generateMarkdownLink(targetGoalFile, '')
 markdownLink = `${markdownLink.slice(0, markdownLink.length - 2)}|${targetGoal.alias}${markdownLink.slice(markdownLink.length - 2)}`
 return `Goal:: ${markdownLink}`;
 ```
+Bar:: `$= dv.view('progress-bar', {file: '; {{VALUE:⚒ Add Project}}'})`
 %%
 
 # {{VALUE:⚒ Add Project}}

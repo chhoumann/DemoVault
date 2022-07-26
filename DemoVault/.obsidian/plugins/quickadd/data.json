@@ -1,11 +1,11 @@
 {
   "choices": [
     {
-      "id": "b448b782-6fdf-44e2-92b5-eb82c3ad70b0",
-      "name": "🎯 Add Goal",
+      "id": "3425037e-ebe4-4983-897f-eddfdcf25664",
+      "name": "Add Goal",
       "type": "Macro",
       "command": true,
-      "macroId": "9840504d-7801-4cdb-ba06-b68c277ffdb0"
+      "macroId": "99d81365-d961-4422-aba4-7bb457ff7683"
     },
     {
       "id": "eb5ae12f-63ec-48cd-a972-78af6f46eba8",
@@ -15,10 +15,17 @@
       "macroId": "255de4e6-6aa2-4a54-a45c-1315ffa46330"
     },
     {
+      "id": "b448b782-6fdf-44e2-92b5-eb82c3ad70b0",
+      "name": "🎯 Add Goal",
+      "type": "Macro",
+      "command": false,
+      "macroId": "9840504d-7801-4cdb-ba06-b68c277ffdb0"
+    },
+    {
       "id": "568e2c32-f2e6-4eb3-8ce9-250ef7ad0b35",
       "name": "🎯 Add Auto Tracking Goal",
       "type": "Macro",
-      "command": true,
+      "command": false,
       "macroId": "38e8764d-6507-46d8-88b1-1b4a6bf0590a"
     }
   ],
@@ -273,6 +280,23 @@
             },
             "openFile": false,
             "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Add Goal - Super",
+      "id": "99d81365-d961-4422-aba4-7bb457ff7683",
+      "commands": [
+        {
+          "name": "choose_goal_type",
+          "type": "UserScript",
+          "id": "f588a13b-da99-4616-abee-98f8ebb814ac",
+          "path": "scripts/choose_goal_type.js",
+          "settings": {
+            "Manually tracked goal choice name": "🎯 Add Goal",
+            "Automatically tracked goal choice name": "🎯 Add Auto Tracking Goal"
           }
         }
       ],
