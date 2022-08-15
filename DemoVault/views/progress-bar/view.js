@@ -1,8 +1,11 @@
 const containerEl = createDiv();
+
+const align = input?.alignLeft ? 'left' : 'center';
+
 Object.assign(containerEl.style, {
     'display': 'flex',
     'flex-direction': 'column',
-    'align-items': 'center',
+    'align-items': align,
     'justify-content': 'center',
 });
 
