@@ -5,19 +5,20 @@ const projects = goalPage
     .inlinks
     .where((p) => {
         const mp = dv.page(p.path);
-        return mp.tags?.contains("project") && mp.status === "In Progress";
+        return mp.tags?.contains("project");
     });
 
-const totalTasksGoalPage = goalPage.file.lists.where(t => t.task).length;
+
+const totalTasksGoalPage = goalPage.file.tasks.length;
 const totalTasksInProjects = projects.values.reduce((acc, p) => {
     const mp = dv.page(p.path);
-    return acc + mp.file.lists.where(t => t.task).length;
+    return acc + mp.file.tasks.length;
 }, 0);
 
-const finishedTasksGoalPage = goalPage.file.lists.where(t => t.task && t.status === 'x').length;
+const finishedTasksGoalPage = goalPage.file.tasks.where(t => t.fullyCompleted === true).length;
 const finishedTasksInProjects = projects.values.reduce((acc, p) => {
     const mp = dv.page(p.path);
-    return acc + mp.file.lists.where(t => t.task && t.status === 'x').length;
+    return acc + mp.file.tasks.where(t => t.fullyCompleted === true).length;
 }, 0);
 
 const Target = totalTasksGoalPage + totalTasksInProjects;

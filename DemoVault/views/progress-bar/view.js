@@ -1,6 +1,5 @@
 const containerEl = createDiv();
-
-const align = input?.alignLeft ? 'left' : 'center';
+const align = input?.alignLeft ? 'left' : 'right';
 
 Object.assign(containerEl.style, {
     'display': 'flex',
