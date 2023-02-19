@@ -1,5 +1,6 @@
 {
   "legacyEditor": false,
   "livePreview": true,
-  "communityPluginSortOrder": "download"
+  "communityPluginSortOrder": "download",
+  "showInlineTitle": false
 }
