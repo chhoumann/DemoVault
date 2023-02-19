@@ -30,13 +30,12 @@ const pages = dv.current().file.inlinks.where(p => dv.page(p.path).tags?.contain
 
 dv.table(["Project", "Status", "Completed", "Tasks"], pages.map(p => {
 	const page = dv.page(p.path);
-	const tasks = page.file.lists.where(t => t.task);
-	
+	const tasks = page.file.tasks;
 	return [
-		page.file.link,
+		page.file.link, 
 		page.status,
-		tasks.where(t => t.status === 'x').length,
+		tasks.where(t => t.fullyCompleted === true).length,
 		tasks.length
-	 ]
+	]
 }));
 ```
