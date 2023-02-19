@@ -44,4 +44,4 @@ Object.assign(progressText, {
     textContent: `${percent}% completed`,
 });
 
-dv.paragraph(containerEl);
+dv.paragraph(containerEl.innerHTML);
