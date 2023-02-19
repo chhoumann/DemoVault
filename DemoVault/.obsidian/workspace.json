@@ -4,12 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a6f1a2d2196d319c",
-        "type": "leaf",
-        "state": {
-          "type": "podcast_player_view",
-          "state": {}
-        }
+        "id": "feeba48a6fd26031",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "67f939f9a4435727",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "goals/2022-07-25 - AutoTracking test.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -27,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -49,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3f0230e5d272638e",
@@ -66,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "goals/2022-07-25 - AutoTracking test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -75,25 +87,41 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "0c5bfd89b6dd6bff",
+            "type": "leaf",
+            "state": {
+              "type": "podcast_player_view",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 336.5,
-    "collapsed": true
+    "width": 336.5
   },
-  "active": "a6f1a2d2196d319c",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "67f939f9a4435727",
   "lastOpenFiles": [
+    "Goals.md",
+    "goals/2022-11-18 - test.md",
+    "Dashboard.md",
+    "Project Board.md",
+    "goals/2022-09-19 - Tr.md",
     "projects/; AutoTrack Project.md",
     "goals/2022-07-25 - AutoTracking test.md",
     "projects/; Read and summarize top 5 copywriting books.md",
-    "Dashboard.md",
     "projects/; Running Plan Q1 2022.md",
-    "projects/; Test project.md",
-    "Goals.md",
-    "goals/2022-07-26 - a.md",
-    "templates/autotracking_goal_item_template.md",
-    "templates/goal_item_template.md"
+    "projects/; Test project.md"
   ]
 }

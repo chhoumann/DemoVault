@@ -12,10 +12,10 @@ Bar:: `$= dv.view('total-progress-bar', {file: '2022-07-25 - AutoTracking test'}
 Projects:: `$= const projects = dv.page('2022-07-25 - AutoTracking test').file.inlinks.where(p => { const mp = dv.page(p.path); return mp.tags?.contains('project') && mp.status === 'In Progress'}); if (projects.length > 0) { dv.header(4, projects.length > 1 ? "Projects" : "Project"); dv.list(projects) }`
 %%
 
-- [x] a
-- [x] b
-- [ ] c
-- [ ] d
+- [ ] a
+- [ ] b
+- [x] c
+- [x] d
 
 ## What does success look like? What are the key results?
 - 
