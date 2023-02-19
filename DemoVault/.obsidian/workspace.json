@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard.md",
-                "mode": "preview",
+                "file": "goals/2022-02-11 - Learn Python.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dashboard.md",
+                "file": "goals/2022-02-11 - Learn Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,9 +113,9 @@
   },
   "active": "67f939f9a4435727",
   "lastOpenFiles": [
-    "goals/2022-07-25 - AutoTracking test.md",
-    "Dashboard.md",
     "Goals.md",
+    "Dashboard.md",
+    "goals/2022-07-25 - AutoTracking test.md",
     "views/total-progress-bar/view.js",
     "views/total-progress-bar",
     "views/target/view.js",

@@ -27,13 +27,6 @@
       "type": "Macro",
       "command": false,
       "macroId": "38e8764d-6507-46d8-88b1-1b4a6bf0590a"
-    },
-    {
-      "id": "1669b078-b815-481c-847c-d7ef4c7ee2f3",
-      "name": "asd",
-      "type": "Multi",
-      "command": false,
-      "choices": []
     }
   ],
   "macros": [
