@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "feeba48a6fd26031",
+        "id": "fe72ebe09f489890",
         "type": "tabs",
         "children": [
           {
-            "id": "67f939f9a4435727",
+            "id": "12d3fa510229fd30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "goals/2022-02-11 - Learn Python.md",
+                "file": "templates/project_item_template.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "goals/2022-02-11 - Learn Python.md",
+                "file": "templates/project_item_template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,9 +111,14 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "67f939f9a4435727",
+  "active": "12d3fa510229fd30",
   "lastOpenFiles": [
+    "templates/goal_item_template.md",
+    "templates/autotracking_goal_item_template.md",
+    "templates/project_item_template.md",
     "Goals.md",
+    "goals/2023-02-19 - Test.md",
+    "goals/2022-02-11 - Learn Python.md",
     "Dashboard.md",
     "goals/2022-07-25 - AutoTracking test.md",
     "views/total-progress-bar/view.js",
@@ -122,7 +127,6 @@
     "views/target",
     "views/progress/view.js",
     "views/progress",
-    "templates/autotracking_goal_item_template.md",
     "scripts/choose_goal_type.js",
     "scripts",
     "projects/; Test project.md",

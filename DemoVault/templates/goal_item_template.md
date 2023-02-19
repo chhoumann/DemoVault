@@ -1,12 +1,12 @@
 ---
 tags: goal
-alias: { { VALUE:Goal } }
+alias: {{VALUE:Goal}}
 Type:
 Progress: 0
-Target: { { VALUE:🎯 Target (number) } }
-Reason: { { VALUE:Why this goal? } }
+Target: {{VALUE:🎯 Target (number)}}
+Reason: {{VALUE:Why this goal?}}
 Timespan:
-    { { VALUE:10 Years, 5 Years, 3 Years, 1 Year, 6 Months, 1 Month, 1 Week } }
+    {{VALUE:10 Years, 5 Years, 3 Years, 1 Year, 6 Months, 1 Month, 1 Week}}
 ---
 
 %%

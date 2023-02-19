@@ -1,9 +1,9 @@
 ---
 tags: project
 alias:
-    - { { VALUE:⚒ Add Project } }
+    - {{VALUE:⚒ Add Project}}
 status:
-subtitle: { { VALUE:Project Subtitle } }
+subtitle: {{VALUE:Project Subtitle}}
 ---
 
 %%
