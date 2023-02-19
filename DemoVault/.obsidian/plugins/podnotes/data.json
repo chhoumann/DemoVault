@@ -1,0 +1,332 @@
+{
+  "savedFeeds": {
+    "The Daily Stoic": {
+      "title": "The Daily Stoic",
+      "url": "https://rss.art19.com/the-daily-stoic",
+      "artworkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts112/v4/12/4b/1c/124b1cf5-7158-d2b3-7456-b772a9843e44/mza_6856035957241662966.jpeg/100x100bb.jpg"
+    },
+    "Huberman Lab": {
+      "title": "Huberman Lab",
+      "url": "https://feeds.megaphone.fm/hubermanlab",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts126/v4/92/fe/9b/92fe9b92-71ce-2db3-d7bc-341734439c5b/mza_17334163224187182080.jpeg/100x100bb.jpg"
+    },
+    "SmartLess": {
+      "title": "SmartLess",
+      "url": "https://rss.art19.com/smartless",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/6b/19/3f/6b193f5a-8d8d-d347-2287-3fd212e7cf25/mza_4212221687672623140.jpeg/100x100bb.jpg"
+    },
+    "Lex Fridman Podcast": {
+      "title": "Lex Fridman Podcast",
+      "url": "https://lexfridman.com/feed/podcast/",
+      "artworkUrl": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts115/v4/3e/e3/9c/3ee39c89-de08-47a6-7f3d-3849cef6d255/mza_16657851278549137484.png/100x100bb.jpg"
+    },
+    "How I Built This with Guy Raz": {
+      "title": "How I Built This with Guy Raz",
+      "url": "https://feeds.npr.org/510313/podcast.xml",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0b/46/9a/0b469a46-3452-48ce-5ed0-bf22be14bb0b/mza_6526217132721629383.jpeg/100x100bb.jpg"
+    },
+    "On Purpose with Jay Shetty": {
+      "title": "On Purpose with Jay Shetty",
+      "url": "https://feeds.simplecast.com/ozLNkAqI",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/56/00/09/560009a3-af98-f1c8-b7e5-e33d2c5110a5/mza_1386068257063370917.jpg/100x100bb.jpg"
+    },
+    "Cortex": {
+      "title": "Cortex",
+      "url": "https://www.relay.fm/cortex/feed",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts115/v4/99/26/63/9926633f-7a22-0903-abe9-14776ea0f2f2/mza_10882648663756825333.png/100x100bb.jpg"
+    },
+    "The Building a Second Brain Podcast": {
+      "title": "The Building a Second Brain Podcast",
+      "url": "https://secondbrain.libsyn.com/rss",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/52/d8/2b/52d82bcd-1a9c-317f-5c9f-3d40f20be635/mza_2991552327289587102.png/100x100bb.jpg"
+    },
+    "Deep Dive with Ali Abdaal": {
+      "title": "Deep Dive with Ali Abdaal",
+      "url": "https://feeds.transistor.fm/deep-dive",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts115/v4/a4/27/47/a42747a1-886e-c1cf-d905-3411d5d023cc/mza_12210357896705649008.jpg/100x100bb.jpg"
+    },
+    "Not Overthinking": {
+      "title": "Not Overthinking",
+      "url": "https://feeds.transistor.fm/notoverthinking",
+      "artworkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts122/v4/2e/4d/86/2e4d8670-d4ea-076b-481f-1f1495880c63/mza_6905282351522733408.jpg/100x100bb.jpg"
+    },
+    "All the Hacks": {
+      "title": "All the Hacks",
+      "url": "https://feeds.simplecast.com/JDkMQxK_",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/d3/e1/65/d3e16567-5bae-fc7f-350c-86eb6d8a285a/mza_2583232375135444438.jpg/100x100bb.jpg"
+    },
+    "The Tim Ferriss Show": {
+      "title": "The Tim Ferriss Show",
+      "url": "https://rss.art19.com/tim-ferriss-show",
+      "artworkUrl": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts125/v4/1e/6c/a3/1e6ca389-8db6-f7e0-7883-1f84d446fb03/mza_1352041245047545601.jpeg/100x100bb.jpg"
+    },
+    "Philosophize This!": {
+      "title": "Philosophize This!",
+      "url": "https://philosophizethis.libsyn.com/rss",
+      "artworkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts125/v4/5e/fa/ad/5efaad35-3dff-5652-0598-22170a5029bc/mza_12051423899012386002.jpg/100x100bb.jpg"
+    },
+    "The History of Rome": {
+      "title": "The History of Rome",
+      "url": "https://historyofrome.libsyn.com/rss",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/ec/d6/60/ecd660d3-f7d4-b92f-4043-7671b3459b25/mza_16584089291257984575.jpg/100x100bb.jpg"
+    },
+    "My First Million": {
+      "title": "My First Million",
+      "url": "https://feeds.megaphone.fm/HS2300184645",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/93/c6/82/93c682c2-fc1d-2c5c-314d-23ceceb10d94/mza_5356701121160744978.jpg/100x100bb.jpg"
+    },
+    "Modern Wisdom": {
+      "title": "Modern Wisdom",
+      "url": "https://modernwisdom.libsyn.com/rss",
+      "artworkUrl": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts113/v4/dd/11/0b/dd110b86-3eb5-3755-6920-cb55dad6e736/mza_8232091355523827080.png/100x100bb.jpg"
+    },
+    "Founders": {
+      "title": "Founders",
+      "url": "https://feeds.simplecast.com/3hnxp7yk",
+      "artworkUrl": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts125/v4/f7/23/d3/f723d32d-9c8a-1e9a-5b58-9ea812aa99d4/mza_13493960477376070697.jpg/100x100bb.jpg"
+    },
+    "Focused": {
+      "title": "Focused",
+      "url": "https://www.relay.fm/focused/feed",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts115/v4/49/86/0d/49860d15-f3d6-5474-1536-cb96d8c4baf5/mza_6358332451902800872.png/100x100bb.jpg"
+    },
+    "The Knowledge Project with Shane Parrish": {
+      "title": "The Knowledge Project with Shane Parrish",
+      "url": "https://theknowledgeproject.libsyn.com/rss",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/70/f6/33/70f63391-3a83-ff0f-f4fe-a20375edfa1e/mza_11963325286517628967.png/100x100bb.jpg"
+    },
+    "Postlight Podcast": {
+      "title": "Postlight Podcast",
+      "url": "https://trackchanges.libsyn.com/rss",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts125/v4/7a/e1/14/7ae11498-cbe3-bef2-df16-35899a2f4a5e/mza_11018371137142732167.jpeg/100x100bb.jpg"
+    },
+    "Invest Like the Best with Patrick O'Shaughnessy": {
+      "title": "Invest Like the Best with Patrick O'Shaughnessy",
+      "url": "https://investlikethebest.libsyn.com/rss",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts114/v4/76/08/53/760853ea-8da5-836f-aeca-bb9fe2e046ab/mza_15691987777477996413.jpg/100x100bb.jpg"
+    },
+    "The Peter Attia Drive": {
+      "title": "The Peter Attia Drive",
+      "url": "https://peterattiadrive.libsyn.com/rss",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/40/b0/a6/40b0a65f-933a-5a93-2c23-71f246945bc7/mza_6104269605032296035.png/100x100bb.jpg"
+    },
+    "Full Stack Radio": {
+      "title": "Full Stack Radio",
+      "url": "https://feeds.transistor.fm/full-stack-radio",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts115/v4/33/62/6a/33626a3e-095d-bdea-623d-863bbfd0e5bd/mza_8499610511616227521.jpg/100x100bb.jpg"
+    },
+    "Hackable?": {
+      "title": "Hackable?",
+      "url": "https://feeds.hackablepodcast.com/hackable",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts113/v4/46/41/7d/46417df8-c966-2552-b32e-58059fa62ced/mza_6123029880996818561.jpg/100x100bb.jpg"
+    },
+    "Starting Greatness": {
+      "title": "Starting Greatness",
+      "url": "https://feeds.simplecast.com/MZz6Vcos",
+      "artworkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts125/v4/bf/51/e5/bf51e541-5931-f961-c7f4-504d6b061c7f/mza_2961101547722287903.jpg/100x100bb.jpg"
+    },
+    "ChooseFI": {
+      "title": "ChooseFI",
+      "url": "https://choosefi.libsyn.com/rss",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts115/v4/c8/8d/73/c88d731a-47f4-d29f-8c61-a0c4ec2443d6/mza_2689938360107430251.png/100x100bb.jpg"
+    },
+    "The Diary Of A CEO with Steven Bartlett": {
+      "title": "The Diary Of A CEO with Steven Bartlett",
+      "url": "https://anchor.fm/s/81678e4c/podcast/rss",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/f2/06/7e/f2067e34-fe6c-952f-1767-9fd4f51f1e69/mza_368220307506521003.jpeg/100x100bb.jpg"
+    },
+    "Founder's Journal": {
+      "title": "Founder's Journal",
+      "url": "https://feeds.megaphone.fm/MOBI4141652289",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts122/v4/07/f6/66/07f666a6-b59d-61d4-f83b-e43ad547384c/mza_17600374171742354444.jpg/100x100bb.jpg"
+    },
+    "What's Your Problem?": {
+      "title": "What's Your Problem?",
+      "url": "https://feeds.megaphone.fm/whatsyourproblem",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/b3/e0/bc/b3e0bc14-643d-6188-9ae7-25b7ce624c02/mza_154792675107227243.jpeg/100x100bb.jpg"
+    },
+    "Jorgenson's Soundbox": {
+      "title": "Jorgenson's Soundbox",
+      "url": "https://ericjorgenson.libsyn.com/rss",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts122/v4/9a/44/5e/9a445e6c-b0e2-f8ad-85ab-020be724ec03/mza_3583467979772465675.jpeg/100x100bb.jpg"
+    },
+    "Brains": {
+      "title": "Brains",
+      "url": "https://feeds.transistor.fm/brains",
+      "artworkUrl": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts115/v4/e2/fa/8a/e2fa8a7f-d56c-1dd5-54cb-0f96627be161/mza_12563425590088720975.jpg/100x100bb.jpg"
+    },
+    "This Week in Startups": {
+      "title": "This Week in Startups",
+      "url": "https://anchor.fm/s/7c624c84/podcast/rss",
+      "artworkUrl": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts122/v4/a4/5c/ad/a45cadbd-619b-7118-0352-656b8d200587/mza_3576848358767798052.jpg/100x100bb.jpg"
+    },
+    "devtools.fm": {
+      "title": "devtools.fm",
+      "url": "https://feeds.buzzsprout.com/1772992.rss",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts115/v4/74/4a/3a/744a3a10-0b6d-8c7d-98a1-6c05e0fbedf7/mza_7762033313959794772.jpg/100x100bb.jpg"
+    },
+    "Console DevTools": {
+      "title": "Console DevTools",
+      "url": "https://feeds.simplecast.com/T80CJwln",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/ca/b4/f9/cab4f913-e889-e6b0-e6a4-2326ce395996/mza_6814124132686897365.jpg/100x100bb.jpg"
+    },
+    "The Science of Everything Podcast": {
+      "title": "The Science of Everything Podcast",
+      "url": "https://feed.podbean.com/fods12/feed.xml",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts115/v4/d3/39/01/d33901e5-1b3b-70df-1919-7b0c69d0ab5a/mza_2129224243813628994.jpg/100x100bb.jpg"
+    },
+    "Jocko Podcast": {
+      "title": "Jocko Podcast",
+      "url": "https://feeds.redcircle.com/64a89f88-a245-4098-8d8d-496325ec4f74",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts115/v4/d6/36/58/d636583c-74b6-3d47-2f49-5b3690a4afc0/mza_17018694818923485829.jpg/100x100bb.jpg"
+    },
+    "The Game w/ Alex Hormozi": {
+      "title": "The Game w/ Alex Hormozi",
+      "url": "https://feeds.captivate.fm/the-game-alex-hormozi/",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/bc/bb/1f/bcbb1f5e-6741-3f8f-f068-89f774b0a75e/mza_8523909673512210159.png/100x100bb.jpg"
+    },
+    "The School of Greatness": {
+      "title": "The School of Greatness",
+      "url": "https://feeds.simplecast.com/AAvup9Zz",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/22/e3/8d/22e38df9-a2ae-8948-d2b7-aea5b567a593/mza_17206370974147580096.jpg/100x100bb.jpg"
+    },
+    "Through the Noise": {
+      "title": "Through the Noise",
+      "url": "https://rss.callin.com/588a985c0af893c42f6d3fdcd6eae245c50670f4bafb4350113f62173cb7d786",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts112/v4/87/50/8a/87508a06-adaf-87dd-c6eb-61a6d1852cc7/mza_5654394228278675172.png/100x100bb.jpg"
+    },
+    "The Scoop": {
+      "title": "The Scoop",
+      "url": "https://feeds.megaphone.fm/theblock-thescoop",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts126/v4/c1/a1/9d/c1a19d4e-1096-efde-32d9-67a7e548f6b6/mza_14007730648541143890.jpg/100x100bb.jpg"
+    },
+    "Masters in Business": {
+      "title": "Masters in Business",
+      "url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/4e4cd910-40a1-4619-a5f3-ae2b0012ffff/5873a3cb-298f-40bc-b71f-ae2b0013000d/podcast.rss",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/62/f7/26/62f7261c-1293-3e18-8e3b-de805539af30/mza_2983320810783873143.jpeg/100x100bb.jpg"
+    },
+    "All-In with Chamath, Jason, Sacks & Friedberg": {
+      "title": "All-In with Chamath, Jason, Sacks & Friedberg",
+      "url": "https://allinchamathjason.libsyn.com/rss",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts124/v4/c7/d2/92/c7d292ea-44b3-47ff-2f5e-74fa5b23db6c/mza_7005270671777648882.png/100x100bb.jpg"
+    },
+    "Acquired": {
+      "title": "Acquired",
+      "url": "https://acquired.libsyn.com/rss",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts112/v4/ac/fc/55/acfc5550-a612-84c9-2455-4f0ac33c5b79/mza_12775081575377677092.png/100x100bb.jpg"
+    },
+    "Andrew Schulz's Flagrant with Akaash Singh": {
+      "title": "Andrew Schulz's Flagrant with Akaash Singh",
+      "url": "https://feeds.soundcloud.com/users/soundcloud:users:333121814/sounds.rss",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts115/v4/d1/d9/62/d1d9621a-84ac-1100-0fb4-63f5f5f3abaa/mza_5134566909232208058.jpg/100x100bb.jpg"
+    },
+    "The Rich Roll Podcast": {
+      "title": "The Rich Roll Podcast",
+      "url": "https://feeds.acast.com/public/shows/5de6c1c9bd860fd53f965e25",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts126/v4/d2/b9/64/d2b9642a-0f6f-15c9-fae2-e7ef0ab41222/mza_17893110152037053499.jpeg/100x100bb.jpg"
+    },
+    "Naval": {
+      "title": "Naval",
+      "url": "https://naval.libsyn.com/rss",
+      "artworkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts123/v4/f5/fe/32/f5fe32e7-e38e-10c3-407f-a7abb4ce1fec/mza_3750381165976515065.jpg/100x100bb.jpg"
+    },
+    "Not Investment Advice": {
+      "title": "Not Investment Advice",
+      "url": "https://feeds.acast.com/public/shows/607879ddfbe1eb33d6525119",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/0c/53/cd/0c53cd85-0f54-29b0-55da-e38473791a5d/mza_16923221510230690156.jpeg/100x100bb.jpg"
+    },
+    "Mind Pump: Raw Fitness Truth": {
+      "title": "Mind Pump: Raw Fitness Truth",
+      "url": "https://mindpump.libsyn.com/rss",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/35/f2/2e/35f22e28-2bc8-0f6c-f599-7062673a629a/mza_16177954186228176022.jpg/100x100bb.jpg"
+    },
+    "The Pomp Podcast": {
+      "title": "The Pomp Podcast",
+      "url": "https://feeds.megaphone.fm/offthechain",
+      "artworkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts126/v4/97/d8/94/97d894d2-ad0a-efb2-fd8e-9b5338d1c238/mza_5624868588216923998.jpeg/100x100bb.jpg"
+    },
+    "The Colin and Samir Show": {
+      "title": "The Colin and Samir Show",
+      "url": "https://anchor.fm/s/91b81a0/podcast/rss",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts112/v4/72/ac/4c/72ac4c87-a615-e816-7f7d-7613861638de/mza_1318471561389089062.jpg/100x100bb.jpg"
+    },
+    "The Portal": {
+      "title": "The Portal",
+      "url": "https://www.omnycontent.com/d/playlist/9b7dacdf-a925-4f95-84dc-ac46003451ff/1713c520-edb6-43a3-b1b9-acb8002fdae7/58e33a0c-f86b-41c5-a11c-acb8002fdaf5/podcast.rss",
+      "artworkUrl": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts115/v4/f5/01/58/f5015813-6a2f-cd0d-8213-062585140c2c/mza_13809868514381361169.jpg/100x100bb.jpg"
+    },
+    "Indie Hackers": {
+      "title": "Indie Hackers",
+      "url": "https://feeds.transistor.fm/the-indie-hackers-podcast",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts113/v4/02/d0/c7/02d0c724-bbd0-42ff-1096-76943633888e/mza_2030424167570228260.jpg/100x100bb.jpg"
+    },
+    "Bankless": {
+      "title": "Bankless",
+      "url": "https://bankless.libsyn.com/rss",
+      "artworkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts125/v4/7d/89/b1/7d89b1bf-d4dc-c8aa-894c-d2bc002c42be/mza_5764066019463168929.png/100x100bb.jpg"
+    },
+    "The Reader's Journey": {
+      "title": "The Reader's Journey",
+      "url": "https://feeds.buzzsprout.com/1185200.rss",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts125/v4/a7/09/0f/a7090f78-eb0b-d219-f38a-759017db185c/mza_11181144221633047073.jpg/100x100bb.jpg"
+    },
+    "FYI - For Your Innovation": {
+      "title": "FYI - For Your Innovation",
+      "url": "https://ark-invest.com/feed/podcast",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/15/f1/70/15f170bc-f71f-51a2-c6e0-1e38a2f3f601/mza_11872850242511136084.png/100x100bb.jpg"
+    },
+    "The Write of Passage Podcast": {
+      "title": "The Write of Passage Podcast",
+      "url": "https://writeofpassage.libsyn.com/rss",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts115/v4/41/5e/62/415e6297-5523-b6e0-479b-2af1dd363b7f/mza_768054090778589837.png/100x100bb.jpg"
+    },
+    "North Star Podcast": {
+      "title": "North Star Podcast",
+      "url": "https://perell.libsyn.com/rss",
+      "artworkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a0/ba/a9/a0baa991-133f-c985-b2f1-ad1b5326e318/mza_10043516640360389035.png/100x100bb.jpg"
+    },
+    "Dan Carlin's Hardcore History": {
+      "title": "Dan Carlin's Hardcore History",
+      "url": "http://feeds.feedburner.com/dancarlin/history?format=xml",
+      "artworkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts115/v4/49/b7/eb/49b7eb32-8f08-6fac-aadb-2f002131fe5f/mza_15196161972010256532.jpg/100x100bb.jpg"
+    }
+  },
+  "podNotes": {},
+  "defaultPlaybackRate": 1,
+  "playedEpisodes": {},
+  "favorites": {
+    "icon": "lucide-star",
+    "name": "Favorites",
+    "shouldEpisodeRemoveAfterPlay": false,
+    "shouldRepeat": false,
+    "episodes": []
+  },
+  "queue": {
+    "icon": "list-ordered",
+    "name": "Queue",
+    "shouldEpisodeRemoveAfterPlay": true,
+    "shouldRepeat": false,
+    "episodes": []
+  },
+  "playlists": {},
+  "skipBackwardLength": 15,
+  "skipForwardLength": 15,
+  "timestamp": {
+    "template": "- {{time}} "
+  },
+  "note": {
+    "path": "",
+    "template": ""
+  },
+  "download": {
+    "path": ""
+  },
+  "downloadedEpisodes": {},
+  "localFiles": {
+    "icon": "folder",
+    "name": "Local Files",
+    "shouldEpisodeRemoveAfterPlay": false,
+    "shouldRepeat": false,
+    "episodes": []
+  }
+}
