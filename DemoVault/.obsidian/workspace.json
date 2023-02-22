@@ -4,21 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d5ae87c15dca03bc",
+        "id": "99973e9f49d5066d",
         "type": "tabs",
         "children": [
           {
-            "id": "cd575c9b77efe264",
+            "id": "f5f2b5892af9105c",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "Goals.md"
+                "file": "templates/project_item_template.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
@@ -76,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Goals.md",
+                "file": "templates/project_item_template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,20 +112,29 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "cd575c9b77efe264",
+  "active": "f5f2b5892af9105c",
   "lastOpenFiles": [
-    "goals/2022-07-25 - AutoTracking test.md",
+    "Project Board.md",
+    "templates/project_item_template.md",
+    "projects/; Test Project 2.md",
     "projects/; AutoTrack Project.md",
-    "templates/autotracking_goal_item_template.md",
+    "Dashboard.md",
+    "projects/; testing 123.md",
+    "projects/; test.md",
+    "projects/; test project 1.md",
+    "goals/2022-02-11 - Reach $10.000 MRR.md",
+    "projects/; Running Plan Q1 2022.md",
+    "projects/; Read and summarize top 5 copywriting books.md",
+    "goals/2022-02-11 - Finish College.md",
     "Goals.md",
+    "goals/2022-07-25 - AutoTracking test.md",
+    "templates/autotracking_goal_item_template.md",
     "goals/2023-02-19 - AutoTracked Goal.md",
     "projects/; Test project.md",
-    "templates/project_item_template.md",
     "templates/goal_item_template.md",
     "goals/2023-02-19 - Test goal.md",
     "goals/2023-02-19 - Test.md",
     "goals/2022-02-11 - Learn Python.md",
-    "Dashboard.md",
     "views/total-progress-bar/view.js",
     "views/total-progress-bar",
     "views/target/view.js",
@@ -134,9 +144,6 @@
     "scripts/choose_goal_type.js",
     "scripts",
     "goals/2022-11-18 - test.md",
-    "Project Board.md",
-    "goals/2022-09-19 - Tr.md",
-    "projects/; Read and summarize top 5 copywriting books.md",
-    "projects/; Running Plan Q1 2022.md"
+    "goals/2022-09-19 - Tr.md"
   ]
 }

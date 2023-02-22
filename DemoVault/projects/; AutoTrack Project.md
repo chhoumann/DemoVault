@@ -3,7 +3,7 @@ tags: project
 alias:
   - AutoTrack Project
 status: In Progress
-subtitle: test
+subtitle: For demo.
 ---
 %%
 Goal:: [[2022-07-25 - AutoTracking test|AutoTracking test]]
