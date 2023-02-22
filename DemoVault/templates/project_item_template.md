@@ -26,7 +26,7 @@ markdownLink = `${markdownLink.slice(0, markdownLink.length - 2)}|${
 return `Goal:: ${markdownLink}`;
 ```
 ```js quickadd
-const shouldProjectTrackProgress = await this.quickAddApi.yesNoPrompt(`Should this project track progress via markdown tasks?`, 'Enabling this will give the project note a Bar property, similar to goals. The tasks are auto-tracked, so each time you check one off, you make progress.');
+const shouldProjectTrackProgress = await this.quickAddApi.yesNoPrompt(`Should this project track progress via markdown tasks?`, 'Enabling this will give the project note a Bar property, similarly to auto-tracked goals. The tasks are auto-tracked, so each time you check one off, you make progress.');
 if (shouldProjectTrackProgress) return "Bar:: `$= dv.view('total-progress-bar', {file: '; {{VALUE:⚒ Add Project}}'})`";
 ```
 %%
