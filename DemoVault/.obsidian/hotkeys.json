@@ -7,5 +7,15 @@
       "key": "N"
     }
   ],
-  "file-explorer:new-file": []
+  "file-explorer:new-file": [],
+  "quickadd:choice:d9df1d6c-bfd1-4318-b395-b42326f45bf4": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "file-explorer:new-file-in-new-pane": []
 }
