@@ -2017,7 +2017,7 @@ function create_each_block(ctx) {
   podcastresultcard = new PodcastResultCard_default({
     props: {
       podcast: ctx[6],
-      isSaved: ((_a = ctx[2][ctx[6].title]) == null ? void 0 : _a.url) === ctx[6].url
+      isSaved: typeof ctx[6].url === "string" && ((_a = ctx[2][ctx[6].title]) == null ? void 0 : _a.url) === ctx[6].url
     }
   });
   podcastresultcard.$on("addPodcast", ctx[4]);
@@ -2036,7 +2036,7 @@ function create_each_block(ctx) {
       if (dirty & 1)
         podcastresultcard_changes.podcast = ctx2[6];
       if (dirty & 5)
-        podcastresultcard_changes.isSaved = ((_a2 = ctx2[2][ctx2[6].title]) == null ? void 0 : _a2.url) === ctx2[6].url;
+        podcastresultcard_changes.isSaved = typeof ctx2[6].url === "string" && ((_a2 = ctx2[2][ctx2[6].title]) == null ? void 0 : _a2.url) === ctx2[6].url;
       podcastresultcard.$set(podcastresultcard_changes);
     },
     i(local) {
@@ -4332,7 +4332,9 @@ ${body(feedsOutline(feeds))}`);
       yield app.vault.create(filePath, doc);
       new import_obsidian10.Notice(`Exported ${feeds.length} podcast feeds to file "${filePath}".`);
     } catch (error) {
-      new import_obsidian10.Notice("Unable to create podcast export file. See console for more details.");
+      new import_obsidian10.Notice(`Unable to create podcast export file:
+
+${error}`);
       console.error(error);
     }
   });
@@ -4645,8 +4647,8 @@ var get_fallback_slot_changes = (dirty) => ({});
 var get_fallback_slot_context = (ctx) => ({});
 function create_if_block_1(ctx) {
   let current;
-  const fallback_slot_template = ctx[9].fallback;
-  const fallback_slot = create_slot(fallback_slot_template, ctx, ctx[8], get_fallback_slot_context);
+  const fallback_slot_template = ctx[10].fallback;
+  const fallback_slot = create_slot(fallback_slot_template, ctx, ctx[9], get_fallback_slot_context);
   return {
     c() {
       if (fallback_slot)
@@ -4660,8 +4662,8 @@ function create_if_block_1(ctx) {
     },
     p(ctx2, dirty) {
       if (fallback_slot) {
-        if (fallback_slot.p && (!current || dirty & 256)) {
-          update_slot_base(fallback_slot, fallback_slot_template, ctx2, ctx2[8], !current ? get_all_dirty_from_scope(ctx2[8]) : get_slot_changes(fallback_slot_template, ctx2[8], dirty, get_fallback_slot_changes), get_fallback_slot_context);
+        if (fallback_slot.p && (!current || dirty & 512)) {
+          update_slot_base(fallback_slot, fallback_slot_template, ctx2, ctx2[9], !current ? get_all_dirty_from_scope(ctx2[9]) : get_slot_changes(fallback_slot_template, ctx2[9], dirty, get_fallback_slot_changes), get_fallback_slot_context);
         }
       }
     },
@@ -4692,11 +4694,12 @@ function create_if_block2(ctx) {
     c() {
       div = element("div");
       img = element("img");
+      attr(img, "draggable", "false");
       if (!src_url_equal(img.src, img_src_value = ctx[0]))
         attr(img, "src", img_src_value);
       attr(img, "alt", ctx[1]);
-      attr(img, "class", img_class_value = null_to_empty(ctx[3]) + " svelte-1uzaahv");
-      set_style(img, "opacity", !ctx[2] ? 1 : ctx[4] ? 1 : 0, false);
+      attr(img, "class", img_class_value = null_to_empty(ctx[4]) + " svelte-1uzaahv");
+      set_style(img, "opacity", ctx[3] ? ctx[3] : !ctx[2] ? 1 : ctx[5] ? 1 : 0, false);
       set_style(img, "transition", ctx[2] ? "opacity 0.5s ease-out" : "", false);
       attr(div, "class", "pn_image_container svelte-1uzaahv");
     },
@@ -4705,9 +4708,9 @@ function create_if_block2(ctx) {
       append(div, img);
       if (!mounted) {
         dispose = [
-          listen(img, "click", ctx[10]),
-          listen(img, "load", ctx[11]),
-          listen(img, "error", ctx[12])
+          listen(img, "click", ctx[11]),
+          listen(img, "load", ctx[12]),
+          listen(img, "error", ctx[13])
         ];
         mounted = true;
       }
@@ -4719,11 +4722,11 @@ function create_if_block2(ctx) {
       if (dirty & 2) {
         attr(img, "alt", ctx2[1]);
       }
-      if (dirty & 8 && img_class_value !== (img_class_value = null_to_empty(ctx2[3]) + " svelte-1uzaahv")) {
+      if (dirty & 16 && img_class_value !== (img_class_value = null_to_empty(ctx2[4]) + " svelte-1uzaahv")) {
         attr(img, "class", img_class_value);
       }
-      if (dirty & 20) {
-        set_style(img, "opacity", !ctx2[2] ? 1 : ctx2[4] ? 1 : 0, false);
+      if (dirty & 44) {
+        set_style(img, "opacity", ctx2[3] ? ctx2[3] : !ctx2[2] ? 1 : ctx2[5] ? 1 : 0, false);
       }
       if (dirty & 4) {
         set_style(img, "transition", ctx2[2] ? "opacity 0.5s ease-out" : "", false);
@@ -4747,9 +4750,9 @@ function create_fragment10(ctx) {
   const if_block_creators = [create_if_block2, create_if_block_1];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
-    if (ctx2[5] || ctx2[4])
+    if (ctx2[6] || ctx2[5])
       return 0;
-    if (ctx2[6])
+    if (ctx2[7])
       return 1;
     return -1;
   }
@@ -4823,6 +4826,7 @@ function instance10($$self, $$props, $$invalidate) {
   let { src } = $$props;
   let { alt } = $$props;
   let { fadeIn = false } = $$props;
+  let { opacity = 0 } = $$props;
   let { class: _class = "" } = $$props;
   let loaded = false;
   let loading = true;
@@ -4833,12 +4837,12 @@ function instance10($$self, $$props, $$invalidate) {
   }
   const click_handler = (e) => onClick(e);
   const load_handler = () => {
-    $$invalidate(4, loaded = true);
-    $$invalidate(5, loading = false);
+    $$invalidate(5, loaded = true);
+    $$invalidate(6, loading = false);
   };
   const error_handler = () => {
-    $$invalidate(6, failed = true);
-    $$invalidate(5, loading = false);
+    $$invalidate(7, failed = true);
+    $$invalidate(6, loading = false);
   };
   $$self.$$set = ($$props2) => {
     if ("src" in $$props2)
@@ -4847,15 +4851,18 @@ function instance10($$self, $$props, $$invalidate) {
       $$invalidate(1, alt = $$props2.alt);
     if ("fadeIn" in $$props2)
       $$invalidate(2, fadeIn = $$props2.fadeIn);
+    if ("opacity" in $$props2)
+      $$invalidate(3, opacity = $$props2.opacity);
     if ("class" in $$props2)
-      $$invalidate(3, _class = $$props2.class);
+      $$invalidate(4, _class = $$props2.class);
     if ("$$scope" in $$props2)
-      $$invalidate(8, $$scope = $$props2.$$scope);
+      $$invalidate(9, $$scope = $$props2.$$scope);
   };
   return [
     src,
     alt,
     fadeIn,
+    opacity,
     _class,
     loaded,
     loading,
@@ -4871,7 +4878,13 @@ function instance10($$self, $$props, $$invalidate) {
 var Image = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance10, create_fragment10, safe_not_equal, { src: 0, alt: 1, fadeIn: 2, class: 3 }, add_css7);
+    init(this, options, instance10, create_fragment10, safe_not_equal, {
+      src: 0,
+      alt: 1,
+      fadeIn: 2,
+      opacity: 3,
+      class: 4
+    }, add_css7);
   }
 };
 var Image_default = Image;
@@ -5726,6 +5739,25 @@ var ImageLoader_default = ImageLoader;
 function add_css12(target) {
   append_styles(target, "svelte-1gcgk6w", ".podcast-episode-item.svelte-1gcgk6w{display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:0.5rem;width:100%;border:solid 1px var(--background-divider);gap:0.25rem}.podcast-episode-item.svelte-1gcgk6w:hover{background-color:var(--background-divider)}.podcast-episode-item.svelte-1gcgk6w:hover{cursor:pointer}.strikeout.svelte-1gcgk6w{text-decoration:line-through}.podcast-episode-information.svelte-1gcgk6w{display:flex;flex-direction:column;justify-content:space-between;align-items:left;width:100%}.episode-item-date.svelte-1gcgk6w{color:gray}.podcast-episode-thumbnail-container.svelte-1gcgk6w{flex-basis:20%;display:flex;align-items:center;justify-content:center}.podcast-episode-thumbnail{border-radius:15%;max-width:5rem;max-height:5rem;cursor:pointer !important}");
 }
+function create_if_block_13(ctx) {
+  let div;
+  return {
+    c() {
+      div = element("div");
+      attr(div, "class", "podcast-episode-thumbnail-container svelte-1gcgk6w");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+    },
+    p: noop,
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching)
+        detach(div);
+    }
+  };
+}
 function create_if_block5(ctx) {
   let div;
   let imageloader;
@@ -5775,8 +5807,9 @@ function create_if_block5(ctx) {
   };
 }
 function create_fragment17(ctx) {
-  var _a;
   let div1;
+  let current_block_type_index;
+  let if_block;
   let t0;
   let div0;
   let span0;
@@ -5790,7 +5823,19 @@ function create_fragment17(ctx) {
   let current;
   let mounted;
   let dispose;
-  let if_block = ctx[2] && ((_a = ctx[0]) == null ? void 0 : _a.artworkUrl) && create_if_block5(ctx);
+  const if_block_creators = [create_if_block5, create_if_block_13];
+  const if_blocks = [];
+  function select_block_type(ctx2, dirty) {
+    var _a;
+    if (ctx2[2] && ((_a = ctx2[0]) == null ? void 0 : _a.artworkUrl))
+      return 0;
+    if (ctx2[2])
+      return 1;
+    return -1;
+  }
+  if (~(current_block_type_index = select_block_type(ctx, -1))) {
+    if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  }
   return {
     c() {
       div1 = element("div");
@@ -5806,13 +5851,14 @@ function create_fragment17(ctx) {
       attr(span0, "class", "episode-item-date svelte-1gcgk6w");
       attr(span1, "class", span1_class_value = null_to_empty(`episode-item-title ${ctx[1] && "strikeout"}`) + " svelte-1gcgk6w");
       attr(div0, "class", "podcast-episode-information svelte-1gcgk6w");
-      set_style(div0, "flex-basis", ctx[2] ? "80%" : "", false);
+      set_style(div0, "flex-basis", "80%", false);
       attr(div1, "class", "podcast-episode-item svelte-1gcgk6w");
     },
     m(target, anchor) {
       insert(target, div1, anchor);
-      if (if_block)
-        if_block.m(div1, null);
+      if (~current_block_type_index) {
+        if_blocks[current_block_type_index].m(div1, null);
+      }
       append(div1, t0);
       append(div1, div0);
       append(div0, span0);
@@ -5830,25 +5876,33 @@ function create_fragment17(ctx) {
       }
     },
     p(ctx2, [dirty]) {
-      var _a2;
-      if (ctx2[2] && ((_a2 = ctx2[0]) == null ? void 0 : _a2.artworkUrl)) {
+      let previous_block_index = current_block_type_index;
+      current_block_type_index = select_block_type(ctx2, dirty);
+      if (current_block_type_index === previous_block_index) {
+        if (~current_block_type_index) {
+          if_blocks[current_block_type_index].p(ctx2, dirty);
+        }
+      } else {
         if (if_block) {
-          if_block.p(ctx2, dirty);
-          if (dirty & 5) {
-            transition_in(if_block, 1);
+          group_outros();
+          transition_out(if_blocks[previous_block_index], 1, 1, () => {
+            if_blocks[previous_block_index] = null;
+          });
+          check_outros();
+        }
+        if (~current_block_type_index) {
+          if_block = if_blocks[current_block_type_index];
+          if (!if_block) {
+            if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
+            if_block.c();
+          } else {
+            if_block.p(ctx2, dirty);
           }
-        } else {
-          if_block = create_if_block5(ctx2);
-          if_block.c();
           transition_in(if_block, 1);
           if_block.m(div1, t0);
-        }
-      } else if (if_block) {
-        group_outros();
-        transition_out(if_block, 1, 1, () => {
+        } else {
           if_block = null;
-        });
-        check_outros();
+        }
       }
       if ((!current || dirty & 8) && t1_value !== (t1_value = ctx2[3].toUpperCase() + ""))
         set_data(t1, t1_value);
@@ -5856,9 +5910,6 @@ function create_fragment17(ctx) {
         set_data(t3, t3_value);
       if (!current || dirty & 2 && span1_class_value !== (span1_class_value = null_to_empty(`episode-item-title ${ctx2[1] && "strikeout"}`) + " svelte-1gcgk6w")) {
         attr(span1, "class", span1_class_value);
-      }
-      if (dirty & 4) {
-        set_style(div0, "flex-basis", ctx2[2] ? "80%" : "", false);
       }
     },
     i(local) {
@@ -5874,8 +5925,9 @@ function create_fragment17(ctx) {
     d(detaching) {
       if (detaching)
         detach(div1);
-      if (if_block)
-        if_block.d();
+      if (~current_block_type_index) {
+        if_blocks[current_block_type_index].d();
+      }
       mounted = false;
       run_all(dispose);
     }
@@ -6051,7 +6103,7 @@ function create_if_block_2(ctx) {
     }
   };
 }
-function create_if_block_13(ctx) {
+function create_if_block_14(ctx) {
   let p;
   return {
     c() {
@@ -6178,7 +6230,7 @@ function create_fragment18(ctx) {
   const header_slot = create_slot(header_slot_template, ctx, ctx[10], get_header_slot_context);
   const header_slot_or_fallback = header_slot || fallback_block(ctx);
   let if_block0 = ctx[2] && create_if_block_2(ctx);
-  let if_block1 = ctx[0].length === 0 && create_if_block_13(ctx);
+  let if_block1 = ctx[0].length === 0 && create_if_block_14(ctx);
   let each_value = ctx[0];
   let each_blocks = [];
   for (let i = 0; i < each_value.length; i += 1) {
@@ -6252,7 +6304,7 @@ function create_fragment18(ctx) {
       if (ctx2[0].length === 0) {
         if (if_block1) {
         } else {
-          if_block1 = create_if_block_13(ctx2);
+          if_block1 = create_if_block_14(ctx2);
           if_block1.c();
           if_block1.m(div0, t2);
         }
@@ -6551,7 +6603,7 @@ function createFileIfNotExists(path, content, episode, createFolder = true) {
 var import_obsidian14 = require("obsidian");
 function downloadFile(url, options) {
   return __async(this, null, function* () {
-    var _a, _b;
+    var _a, _b, _c, _d;
     try {
       const response = yield (0, import_obsidian14.requestUrl)({ url, method: "GET" });
       if (response.status !== 200) {
@@ -6560,52 +6612,45 @@ function downloadFile(url, options) {
       const contentLength = response.arrayBuffer.byteLength;
       (_a = options == null ? void 0 : options.onFinished) == null ? void 0 : _a.call(options);
       return {
-        blob: new Blob([response.arrayBuffer], { type: (_b = response.headers["content-type"]) != null ? _b : "" }),
+        blob: new Blob([response.arrayBuffer], {
+          type: (_c = (_b = response.headers["content-type"]) != null ? _b : response.headers["Content-Type"]) != null ? _c : ""
+        }),
         contentLength,
         receivedLength: contentLength,
         responseUrl: url
       };
     } catch (error) {
-      throw new Error(`Failed to download ${url}: ${error.message}`);
+      const err = new Error(`Failed to download ${url}:
+
+${error.message}`);
+      (_d = options == null ? void 0 : options.onError) == null ? void 0 : _d.call(options, err);
+      throw err;
     }
   });
 }
-function downloadEpisodeWithProgressNotice(episode, downloadPathTemplate) {
+function downloadEpisodeWithNotice(episode, downloadPathTemplate) {
   return __async(this, null, function* () {
     const { doc, update: update2 } = createNoticeDoc(`Download "${episode.title}"`);
     const SOME_LARGE_INT_SO_THE_BOX_DOESNT_AUTO_CLOSE = 999999999;
     const notice = new import_obsidian14.Notice(doc, SOME_LARGE_INT_SO_THE_BOX_DOESNT_AUTO_CLOSE);
     update2((bodyEl) => bodyEl.createEl("p", { text: "Starting download..." }));
-    let progressBar;
-    let percentEl;
     update2((bodyEl) => {
-      percentEl = bodyEl.createSpan({ text: "0%" });
-      progressBar = new Progressbar_default({
-        target: bodyEl,
-        props: {
-          max: 100,
-          value: 0,
-          style: {
-            width: "100%",
-            height: "2rem"
-          }
-        }
-      });
+      bodyEl.createEl("p", { text: "Downloading..." });
     });
     const { blob, responseUrl } = yield downloadFile(episode.streamUrl, {
-      onProgress: (progress, total) => {
-        update2((_) => {
-          percentEl.textContent = `${Math.floor(progress / total * 100)}%`;
-          progressBar.$set({ value: progress / total * 100 });
-        }, false);
-      },
       onFinished: () => {
-        progressBar.$destroy();
         update2((bodyEl) => bodyEl.createEl("p", { text: "Download complete!" }));
+      },
+      onError: (error) => {
+        update2((bodyEl) => bodyEl.createEl("p", { text: `Download failed: ${error.message}` }));
       }
     });
-    console.log(blob);
     if (!blob.type.contains("audio")) {
+      update2((bodyEl) => {
+        bodyEl.createEl("p", {
+          text: `Downloaded file is not an audio file. It is of type "${blob.type}". Blob: ${blob.size} bytes.`
+        });
+      });
       throw new Error("Not an audio file");
     }
     try {
@@ -6616,7 +6661,9 @@ function downloadEpisodeWithProgressNotice(episode, downloadPathTemplate) {
         blob,
         responseUrl
       });
-      update2((bodyEl) => bodyEl.createEl("p", { text: `Successfully downloaded "${episode.title}" from ${episode.podcastName}.` }));
+      update2((bodyEl) => bodyEl.createEl("p", {
+        text: `Successfully downloaded "${episode.title}" from ${episode.podcastName}.`
+      }));
     } catch (error) {
       update2((bodyEl) => {
         bodyEl.createEl("p", {
@@ -6653,7 +6700,12 @@ function createNoticeDoc(title) {
   };
 }
 function createEpisodeFile(_0) {
-  return __async(this, arguments, function* ({ episode, downloadPathTemplate, blob, responseUrl }) {
+  return __async(this, arguments, function* ({
+    episode,
+    downloadPathTemplate,
+    blob,
+    responseUrl
+  }) {
     const basename = DownloadPathTemplateEngine(downloadPathTemplate, episode);
     const filePath = `${basename}.${getUrlExtension(responseUrl)}`;
     const buffer = yield blob.arrayBuffer();
@@ -6696,7 +6748,7 @@ function spawnEpisodeContextMenu(episode, event, disabledMenuItems) {
           new import_obsidian15.Notice(`Please set a download path in the settings.`);
           return;
         }
-        downloadEpisodeWithProgressNotice(episode, downloadPath);
+        downloadEpisodeWithNotice(episode, downloadPath);
       }
     }));
   }
@@ -6788,7 +6840,7 @@ function createMediaUrlObjectFromFilePath(filePath) {
 
 // src/ui/PodcastView/EpisodePlayer.svelte
 function add_css14(target) {
-  append_styles(target, "svelte-1s6o65l", ".episode-player.svelte-1s6o65l{display:flex;flex-direction:column;height:100%}.episode-image-container.svelte-1s6o65l{width:100%;height:auto;padding:5% 20%}.hover-container.svelte-1s6o65l{width:15rem;height:15rem;display:flex;align-items:center;justify-content:center;position:relative;margin-left:auto;margin-right:auto}.podcast-artwork.svelte-1s6o65l{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:absolute}.podcast-artwork-placeholder.svelte-1s6o65l{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:absolute;display:flex;align-items:center;justify-content:center}.podcast-artwork.svelte-1s6o65l:hover{cursor:pointer !important}.podcast-artwork-overlay.svelte-1s6o65l{position:absolute}.podcast-artwork-isloading-overlay.svelte-1s6o65l{position:absolute;display:block}.podcast-artwork-overlay.svelte-1s6o65l:hover{cursor:pointer !important}.opacity-50.svelte-1s6o65l{opacity:0.5}.podcast-title.svelte-1s6o65l{font-size:1.5rem;font-weight:bold;margin:0%;margin-bottom:0.5rem;text-align:center}.status-container.svelte-1s6o65l{display:flex;align-items:center;justify-content:space-around}.controls-container.svelte-1s6o65l{display:flex;align-items:center;justify-content:space-between;margin-top:1rem;margin-left:25%;margin-right:25%}.playbackrate-container.svelte-1s6o65l{display:flex;align-items:center;justify-content:space-around;margin-bottom:2.5rem;flex-direction:column;margin-top:auto}");
+  append_styles(target, "svelte-1itadba", ".episode-player{display:flex;flex-direction:column;height:100%}.episode-image-container{width:100%;height:auto;padding:5% 0%}.hover-container{min-width:10rem;min-height:10rem;width:100%;height:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;position:relative;margin-left:auto;margin-right:auto}.podcast-artwork{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:absolute}.podcast-artwork-placeholder{width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:absolute;display:flex;align-items:center;justify-content:center}.podcast-artwork:hover{cursor:pointer !important}.podcast-artwork-overlay{position:absolute}.podcast-artwork-isloading-overlay{position:absolute;display:block}.podcast-artwork-overlay:hover{cursor:pointer !important}.opacity-50{opacity:0.5}.podcast-title{font-size:1.5rem;font-weight:bold;margin:0%;margin-bottom:0.5rem;text-align:center}.status-container{display:flex;align-items:center;justify-content:space-around}.controls-container{display:flex;align-items:center;justify-content:space-between;margin-top:1rem;margin-left:25%;margin-right:25%}.playbackrate-container{display:flex;align-items:center;justify-content:space-around;margin-bottom:2.5rem;flex-direction:column;margin-top:auto}");
 }
 function create_fallback_slot(ctx) {
   let div;
@@ -6800,7 +6852,7 @@ function create_fallback_slot(ctx) {
     c() {
       div = element("div");
       create_component(icon.$$.fragment);
-      attr(div, "class", div_class_value = null_to_empty("podcast-artwork-placeholder" + (ctx[2] || ctx[9] ? " opacity-50" : "")) + " svelte-1s6o65l");
+      attr(div, "class", div_class_value = "podcast-artwork-placeholder" + (ctx[2] || ctx[9] ? " opacity-50" : ""));
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -6808,7 +6860,7 @@ function create_fallback_slot(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (!current || dirty[0] & 516 && div_class_value !== (div_class_value = null_to_empty("podcast-artwork-placeholder" + (ctx2[2] || ctx2[9] ? " opacity-50" : "")) + " svelte-1s6o65l")) {
+      if (!current || dirty[0] & 516 && div_class_value !== (div_class_value = "podcast-artwork-placeholder" + (ctx2[2] || ctx2[9] ? " opacity-50" : ""))) {
         attr(div, "class", div_class_value);
       }
     },
@@ -6843,7 +6895,7 @@ function create_else_block2(ctx) {
     c() {
       div = element("div");
       create_component(icon.$$.fragment);
-      attr(div, "class", "podcast-artwork-overlay svelte-1s6o65l");
+      attr(div, "class", "podcast-artwork-overlay");
       attr(div, "style", div_style_value = `display: ${ctx[2] || ctx[9] ? "block" : "none"}`);
     },
     m(target, anchor) {
@@ -6886,7 +6938,7 @@ function create_if_block7(ctx) {
     c() {
       div = element("div");
       create_component(loading.$$.fragment);
-      attr(div, "class", "podcast-artwork-isloading-overlay svelte-1s6o65l");
+      attr(div, "class", "podcast-artwork-isloading-overlay");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -7048,9 +7100,10 @@ function create_fragment20(ctx) {
   let dispose;
   image = new Image_default({
     props: {
-      class: "podcast-artwork" + (ctx[2] || ctx[9] ? " opacity-50" : ""),
+      class: "podcast-artwork",
       src: (_a = ctx[5].artworkUrl) != null ? _a : "",
       alt: ctx[5].title,
+      opacity: ctx[2] || ctx[9] ? 0.5 : 1,
       $$slots: { fallback: [create_fallback_slot] },
       $$scope: { ctx }
     }
@@ -7159,13 +7212,13 @@ function create_fragment20(ctx) {
       create_component(slider.$$.fragment);
       t15 = space();
       create_component(episodelist.$$.fragment);
-      attr(div0, "class", "hover-container svelte-1s6o65l");
-      attr(div1, "class", "episode-image-container svelte-1s6o65l");
-      attr(h2, "class", "podcast-title svelte-1s6o65l");
-      attr(div2, "class", "status-container svelte-1s6o65l");
-      attr(div3, "class", "controls-container svelte-1s6o65l");
-      attr(div4, "class", "playbackrate-container svelte-1s6o65l");
-      attr(div5, "class", "episode-player svelte-1s6o65l");
+      attr(div0, "class", "hover-container");
+      attr(div1, "class", "episode-image-container");
+      attr(h2, "class", "podcast-title");
+      attr(div2, "class", "status-container");
+      attr(div3, "class", "controls-container");
+      attr(div4, "class", "playbackrate-container");
+      attr(div5, "class", "episode-player");
     },
     m(target, anchor) {
       insert(target, div5, anchor);
@@ -7219,12 +7272,12 @@ function create_fragment20(ctx) {
       var _a2;
       ctx = new_ctx;
       const image_changes = {};
-      if (dirty[0] & 516)
-        image_changes.class = "podcast-artwork" + (ctx[2] || ctx[9] ? " opacity-50" : "");
       if (dirty[0] & 32)
         image_changes.src = (_a2 = ctx[5].artworkUrl) != null ? _a2 : "";
       if (dirty[0] & 32)
         image_changes.alt = ctx[5].title;
+      if (dirty[0] & 516)
+        image_changes.opacity = ctx[2] || ctx[9] ? 0.5 : 1;
       if (dirty[0] & 516 | dirty[1] & 2) {
         image_changes.$$scope = { dirty, ctx };
       }
@@ -7820,7 +7873,7 @@ function create_if_block_4(ctx) {
     }
   };
 }
-function create_if_block_14(ctx) {
+function create_if_block_15(ctx) {
   let episodelist;
   let current;
   episodelist = new EpisodeList_default({
@@ -8185,7 +8238,7 @@ function create_fragment23(ctx) {
   }
   topbar = new TopBar_default({ props: topbar_props });
   binding_callbacks.push(() => bind(topbar, "viewState", topbar_viewState_binding));
-  const if_block_creators = [create_if_block9, create_if_block_14, create_if_block_4];
+  const if_block_creators = [create_if_block9, create_if_block_15, create_if_block_4];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (ctx2[8] === 2 /* Player */)
@@ -8733,6 +8786,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "podnotes-show-leaf",
         name: "Show PodNotes",
+        icon: "podcast",
         checkCallback(checking) {
           if (checking) {
             return !app.workspace.getLeavesOfType(VIEW_TYPE).length;
@@ -8745,6 +8799,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "start-playing",
         name: "Play Podcast",
+        icon: "play-circle",
         checkCallback: (checking) => {
           if (checking) {
             return !this.api.isPlaying && !!this.api.podcast;
@@ -8755,6 +8810,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "stop-playing",
         name: "Stop Podcast",
+        icon: "stop-circle",
         checkCallback: (checking) => {
           if (checking) {
             return this.api.isPlaying && !!this.api.podcast;
@@ -8765,6 +8821,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "skip-backward",
         name: "Skip Backward",
+        icon: "skip-back",
         checkCallback: (checking) => {
           if (checking) {
             return this.api.isPlaying && !!this.api.podcast;
@@ -8775,6 +8832,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "skip-forward",
         name: "Skip Forward",
+        icon: "skip-forward",
         checkCallback: (checking) => {
           if (checking) {
             return this.api.isPlaying && !!this.api.podcast;
@@ -8785,12 +8843,13 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "download-playing-episode",
         name: "Download Playing Episode",
+        icon: "download",
         checkCallback: (checking) => {
           if (checking) {
             return !!this.api.podcast;
           }
           const episode = this.api.podcast;
-          downloadEpisodeWithProgressNotice(episode, this.settings.download.path);
+          downloadEpisodeWithNotice(episode, this.settings.download.path);
         }
       });
       this.addCommand({
@@ -8804,6 +8863,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "capture-timestamp",
         name: "Capture Timestamp",
+        icon: "clock",
         editorCheckCallback: (checking, editor, view) => {
           if (checking) {
             return !!this.api.podcast && !!this.settings.timestamp.template;
@@ -8817,6 +8877,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "create-podcast-note",
         name: "Create Podcast Note",
+        icon: "file-plus",
         checkCallback: (checking) => {
           if (checking) {
             return !!this.api.podcast && !!this.settings.note.path && !!this.settings.note.template;
@@ -8827,6 +8888,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "get-share-link-episode",
         name: "Copy universal episode link to clipboard",
+        icon: "share",
         checkCallback: (checking) => {
           if (checking) {
             return !!this.api.podcast;
@@ -8837,6 +8899,7 @@ var PodNotes = class extends import_obsidian22.Plugin {
       this.addCommand({
         id: "podnotes-toggle-playback",
         name: "Toggle playback",
+        icon: "play",
         checkCallback: (checking) => {
           if (checking) {
             return !!this.api.podcast;

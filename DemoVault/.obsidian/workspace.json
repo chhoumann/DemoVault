@@ -4,22 +4,60 @@
     "type": "split",
     "children": [
       {
-        "id": "99973e9f49d5066d",
+        "id": "89b892915f706ba8",
         "type": "tabs",
         "children": [
           {
-            "id": "f5f2b5892af9105c",
+            "id": "0806e2b3ff605368",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/project_item_template.md",
+                "file": "Starting point.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9c95e91db2a4ea1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Transformer model.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a5409e98c65bac23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NLP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac47944865f50f19",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "self-attention.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -56,12 +94,21 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "fb2246d9b8fa318d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3f0230e5d272638e",
@@ -77,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "templates/project_item_template.md",
+                "file": "NLP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,29 +159,36 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "f5f2b5892af9105c",
+  "active": "a5409e98c65bac23",
   "lastOpenFiles": [
-    "Project Board.md",
-    "templates/project_item_template.md",
-    "projects/; Test Project 2.md",
-    "projects/; AutoTrack Project.md",
+    "The Transformer model.md",
+    "NLP.md",
+    "self-attention.md",
+    "Starting point.md",
+    "ai prompts/explain.md",
+    "templates/New Note - Explain with AI.md",
     "Dashboard.md",
+    "ai prompts",
+    "ai prompts/Manual Prompt.md",
+    "ai prompts/Manual Prompt.md",
+    "ai prompts",
+    "Goals.md",
+    "templates/autotracking_goal_item_template.md",
+    "templates/goal_item_template.md",
+    "templates/project_item_template.md",
+    "Project Board.md",
+    "test.md",
+    "goals/2023-03-28 - ATGoal.md",
+    "projects/; ATProject.md",
+    "projects/; AutoTrack Project.md",
+    "goals/2022-02-11 - Finish College.md",
+    "goals/2022-07-25 - AutoTracking test.md",
+    "projects/; Test Project 2.md",
     "projects/; testing 123.md",
     "projects/; test.md",
     "projects/; test project 1.md",
     "goals/2022-02-11 - Reach $10.000 MRR.md",
     "projects/; Running Plan Q1 2022.md",
-    "projects/; Read and summarize top 5 copywriting books.md",
-    "goals/2022-02-11 - Finish College.md",
-    "Goals.md",
-    "goals/2022-07-25 - AutoTracking test.md",
-    "templates/autotracking_goal_item_template.md",
-    "goals/2023-02-19 - AutoTracked Goal.md",
-    "projects/; Test project.md",
-    "templates/goal_item_template.md",
-    "goals/2023-02-19 - Test goal.md",
-    "goals/2023-02-19 - Test.md",
-    "goals/2022-02-11 - Learn Python.md",
     "views/total-progress-bar/view.js",
     "views/total-progress-bar",
     "views/target/view.js",
@@ -142,8 +196,6 @@
     "views/progress/view.js",
     "views/progress",
     "scripts/choose_goal_type.js",
-    "scripts",
-    "goals/2022-11-18 - test.md",
-    "goals/2022-09-19 - Tr.md"
+    "scripts"
   ]
 }
