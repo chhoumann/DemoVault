@@ -34,6 +34,13 @@
       "type": "Macro",
       "command": true,
       "macroId": "cb68e76e-23cd-4676-bba4-4b201bf933ea"
+    },
+    {
+      "id": "5b3f5fe7-fe67-447c-b350-f5d27aadffb3",
+      "name": "Add Movie",
+      "type": "Macro",
+      "command": false,
+      "macroId": "dc226b4b-ac23-4cb6-af1f-b9dc4014548a"
     }
   ],
   "macros": [
@@ -427,13 +434,62 @@
         }
       ],
       "runOnStartup": false
+    },
+    {
+      "name": "Add Movie",
+      "id": "dc226b4b-ac23-4cb6-af1f-b9dc4014548a",
+      "commands": [
+        {
+          "name": "movies",
+          "type": "UserScript",
+          "id": "7da8358e-f86d-44ec-812e-a7a2fbd9e703",
+          "path": "movies.js",
+          "settings": {
+            "OMDb API Key": ""
+          }
+        },
+        {
+          "name": "Add Movie Note",
+          "type": "NestedChoice",
+          "id": "7a8c1568-6539-45c3-b09e-0352b6c54579",
+          "choice": {
+            "id": "b8bec21e-6df3-44f0-adf9-e761c110e868",
+            "name": "Add Movie Note",
+            "type": "Template",
+            "command": false,
+            "templatePath": "templates/movie template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{value:fileName}}"
+            },
+            "folder": {
+              "enabled": false,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
     }
   ],
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "",
   "announceUpdates": true,
-  "version": "0.23.0",
+  "version": "1.2.1",
   "disableOnlineFeatures": false,
   "ai": {
     "OpenAIApiKey": "",

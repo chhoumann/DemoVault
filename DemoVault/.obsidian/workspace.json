@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "022c5f12f01b3111",
+        "id": "284426cfa6eb5f2b",
         "type": "tabs",
         "children": [
           {
-            "id": "b5697dab634ff763",
+            "id": "9acfb8bd03d64c73",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "templates/movie template.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -66,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3f0230e5d272638e",
@@ -83,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "templates/movie template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,15 +121,28 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "b5697dab634ff763",
+  "active": "9acfb8bd03d64c73",
   "lastOpenFiles": [
+    "convolutional neural networks (CNNs).md",
+    "Harry Potter and the Prisoner of Azkaban.md",
+    "templates/movie template.md",
+    "movies.js",
+    "scripts",
+    "Project Board.md",
+    "projects/; Automate data analysis for email lead data.md",
+    "projects/; Course 3.md",
+    "Transformer_Model_Attention.md",
+    "Self-Attention-in-Transformer.md",
+    "The Transformer Model.md",
+    "Scratchpad.md",
+    "ai prompts/suggest title.md",
+    "Transformer_Model_Attention_Mechanism.md",
     "Starting point.md",
     "The Transformer model.md",
     "NLP.md",
     "Goals.md",
     "goals/2022-02-11 - Finish College.md",
     "goals/2022-07-25 - AutoTracking test.md",
-    "Project Board.md",
     "self-attention.md",
     "ai prompts/explain.md",
     "templates/New Note - Explain with AI.md",
@@ -136,24 +153,11 @@
     "ai prompts",
     "templates/autotracking_goal_item_template.md",
     "templates/goal_item_template.md",
-    "templates/project_item_template.md",
-    "test.md",
-    "goals/2023-03-28 - ATGoal.md",
-    "projects/; ATProject.md",
-    "projects/; AutoTrack Project.md",
-    "projects/; Test Project 2.md",
-    "projects/; testing 123.md",
-    "projects/; test.md",
-    "projects/; test project 1.md",
-    "goals/2022-02-11 - Reach $10.000 MRR.md",
-    "projects/; Running Plan Q1 2022.md",
     "views/total-progress-bar/view.js",
     "views/total-progress-bar",
     "views/target/view.js",
     "views/target",
     "views/progress/view.js",
-    "views/progress",
-    "scripts/choose_goal_type.js",
-    "scripts"
+    "views/progress"
   ]
 }
