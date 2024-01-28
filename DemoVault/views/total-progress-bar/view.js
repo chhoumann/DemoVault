@@ -32,8 +32,8 @@ Object.assign(containerEl.style, {
     "justify-content": "center",
 });
 
-const max = Target || 0;
-const value = Progress || 0;
+const max = 100 || 0;
+const value = Math.round((Progress/Target)*100) || 0; 
 const percent = Math.round((value / max) * 100) || 0;
 
 const progressBar = containerEl.createEl("progress");
