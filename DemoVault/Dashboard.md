@@ -12,7 +12,7 @@ TABLE WITHOUT ID
 	(link(file.path, alias)) as title,
 	Bar
 FROM #goal
-WHERE number(Progress) != number(Target)
+WHERE type != "Archive"
 SORT Type DESC
 ```
 
